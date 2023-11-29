@@ -1,13 +1,16 @@
 package com.example.orderservice.entity;
 
 import com.example.orderservice.dto.OrderStatus;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @Entity
+@ToString
 @Table(name = "purchase_order")
 public class PurchaseOrder {
     @Id
@@ -25,6 +28,7 @@ public class PurchaseOrder {
     private Integer amount;
 
     @Enumerated
+    @JsonProperty("status")
     @Column(name = "order_status")
     private OrderStatus orderStatus;
 

@@ -7,8 +7,8 @@ POST http://localhost:8082/products
 Content-Type: application/json
 
 {
-  "price": 123123,
-  "description": "fkljadslfkjdsa"
+  "price": 100,
+  "description": "pro1"
 }
 
 ###

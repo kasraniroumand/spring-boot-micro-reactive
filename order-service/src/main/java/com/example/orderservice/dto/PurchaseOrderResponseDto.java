@@ -5,7 +5,7 @@ import lombok.ToString;
 
 @Data
 public class PurchaseOrderResponseDto {
-    private Integer orderId;
+    private Long orderId;
     private Integer userId;
     private String productId;
     private Integer amount;

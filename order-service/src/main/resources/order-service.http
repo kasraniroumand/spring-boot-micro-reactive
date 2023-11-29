@@ -1,0 +1,10 @@
+POST http://localhost:8083/order
+Content-Type: application/json
+
+{
+  "userId": 13,
+  "productId": "6567bbd82705ab5f7f789d68"
+}
+
+###
+GET http://localhost:8083/order/users/13
