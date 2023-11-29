@@ -1,0 +1,27 @@
+###
+GET http://localhost:8082/products/all
+
+
+###
+POST http://localhost:8082/products
+Content-Type: application/json
+
+{
+  "price": 123123,
+  "description": "fkljadslfkjdsa"
+}
+
+###
+GET http://localhost:8082/products/65662f3ce2386b4fc091fdcb
+
+###
+PUT http://localhost:8082/products/65662f3ce2386b4fc091fdcb
+Content-Type: application/json
+
+{
+  "description": "description",
+  "price": 1
+}
+
+###
+DELETE http://localhost:8082/products/656626cd40a1b52110b2788a

@@ -1,0 +1,32 @@
+###
+POST http://localhost:8092/user/transaction
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "amount": 800
+}
+
+###
+POST http://localhost:8092/user
+Content-Type: application/json
+
+{
+  "name": "test1",
+  "balance": 1200
+}
+
+
+###
+GET http://localhost:8092/user/all
+
+<> 2023-11-27T182305.404.json
+
+###
+GET http://localhost:8092/user/1
+
+
+<> 2023-11-27T182746.404.json
+<> 2023-11-27T182448.404.json
+
+
